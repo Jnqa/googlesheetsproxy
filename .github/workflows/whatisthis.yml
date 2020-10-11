@@ -25,5 +25,5 @@ jobs:
       - name: bulid
         run: docker build -t Jnqa/gsproxy .
       
-      - name: run
-        run: docker run --rm -it --env-file .env -p 8100:8000 --name gsproxy Jnqa/gsproxy
+ #     - name: run
+ #       run: docker run --rm -it --env-file .env -p 8100:8000 --name gsproxy Jnqa/gsproxy

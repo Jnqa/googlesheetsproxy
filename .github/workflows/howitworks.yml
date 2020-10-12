@@ -14,7 +14,8 @@ on:
 jobs:
   build:
     name: WhatAndWhere
-    runs-on: node:14
+    #runs-on: node:14
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2

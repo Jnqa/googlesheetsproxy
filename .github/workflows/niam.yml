@@ -12,7 +12,7 @@ jobs:
       #- name: run
       #  run: echo ">>> Build <<<"
       - name: Build
-        run: docker build -t Jnqa/googlesheetsproxy .
+        run: docker build -t jnqa/googlesheetsproxy .
       
  #     - name: run
  #       run: docker run --rm -it --env-file .env -p 8100:8000 --name gsproxy Jnqa/gsproxy

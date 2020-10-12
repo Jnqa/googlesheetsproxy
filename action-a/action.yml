@@ -8,9 +8,9 @@ inputs:
     required: true
     default: "7471"
 
-runs:
-  using: "docker"
-  image: "dockerfile-build"
+#runs:
+#  using: "docker"
+#  image: "dockerfile-build"
 
 branding:
   icon: "mic"

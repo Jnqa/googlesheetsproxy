@@ -7,16 +7,16 @@ jobs:
     name: Build after push
     runs-on: ubuntu-latest
     steps:
-    - id: step0
+    - name: akshon
       uses: actions/checkout@v2
-    - id: step1
-      run: echo ">>> Build <<<"
+    - name: Say Build
+      run: echo ">>> Build <<< -- Useless you know?"
     - name: docker-magic
       run: docker build -t jnqa/googlesheetsproxy .
-    - id: step2
-      run: echo "<<< Complete! >>>"
+    - name: Say Good News
+      run: echo "<<< Complete! >>> -- Useless you know?"
   job2:
-    name: Report
+    name: Second thread
     runs-on: ubuntu-latest
     steps:
     - id: step1

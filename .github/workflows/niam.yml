@@ -7,22 +7,20 @@ jobs:
     name: Build after push
     runs-on: ubuntu-latest
     steps:
-    #- id: step1
-    # - uses: actions/checkout@v2
+    - id: step0
+    - uses: actions/checkout@v2
     - id: step1
       run: echo ">>> Build <<<"
     - name: docker-magic
       run: docker build -t jnqa/googlesheetsproxy .
+    - id: step2
+      run: echo "<<< Complete! >>>"
   job2:
     name: Report
     runs-on: ubuntu-latest
     steps:
     - id: step1
-      run: echo "<<< Complete! >>>"
-    - id: step2
-      run: read var1
-    - id: step3
-      run: echo "step 5 >> $var1"
+      run: echo "Second process"
 
  # +
  #     - name: run

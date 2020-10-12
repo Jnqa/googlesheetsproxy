@@ -1,0 +1,17 @@
+name: "ZSP"
+description: "We will build this shit"
+author: "Jnqa"
+
+inputs:
+  KEY:
+    description: "Wut?"
+    required: true
+    default: "7471"
+
+runs:
+  using: "docker"
+  image: "Dockerfile-build"
+
+branding:
+  icon: "mic"
+  color: "green"

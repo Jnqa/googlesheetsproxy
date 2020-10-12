@@ -19,6 +19,7 @@ jobs:
       run: read var1
     - id: step5
       run: echo "step 5 >> $var1"
-      
+
+ # +
  #     - name: run
  #       run: docker run --rm -it --env-file .env -p 8100:8000 --name gsproxy Jnqa/gsproxy

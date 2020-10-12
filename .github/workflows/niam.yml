@@ -13,6 +13,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+      - name: run
         run: echo ">>> Build <<<"
       - uses: ./action-a
         with:
